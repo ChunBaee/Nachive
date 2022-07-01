@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Nachive</string>
+
+    <string name="kakao_native_app_key">fc2055eed4bc9cca4b860e2b31455b0a</string>
+    <string name="naver_client_id">rYIPVMa5hzDna72Bc3HG</string>
+    <string name="naver_client_secret">G7G1e_GWrz</string>
+
 </resources>

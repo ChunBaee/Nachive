@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_background_color">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_kakao"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_kakao_login"
+            app:layout_constraintWidth_percent="0.80"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_naver"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_naver_login"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_kakao"
+            app:layout_constraintBottom_toTopOf="@id/btn_logout"
+            app:layout_constraintStart_toStartOf="@id/btn_login_kakao"
+            app:layout_constraintEnd_toEndOf="@id/btn_login_kakao" />
+
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_kakao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

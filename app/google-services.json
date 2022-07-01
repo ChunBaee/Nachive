@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "380819217604",
+    "project_id": "nachive-417ff",
+    "storage_bucket": "nachive-417ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380819217604:android:d3c43481040fe113623d91",
+        "android_client_info": {
+          "package_name": "com.chuno.nachive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380819217604-v95l7ljcalsq0fm7ro5kjvogd908fgb7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chuno.nachive",
+            "certificate_hash": "41342a194d7b2e339be97fc1ae8c1d68db4f826c"
+          }
+        },
+        {
+          "client_id": "380819217604-ppvs4umg9u2mr1fe2rtsjpnfja6h30kd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJTW4yb_sz4x5ph2Uy6FXjueHNVSC7HJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380819217604-ppvs4umg9u2mr1fe2rtsjpnfja6h30kd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
