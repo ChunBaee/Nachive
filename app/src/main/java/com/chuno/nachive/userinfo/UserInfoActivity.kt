@@ -21,6 +21,7 @@ class UserInfoActivity : AppCompatActivity() {
 
         binding.view = this
 
+        window.statusBarColor = resources.getColor(R.color.white)
         observe()
         checkUserNickname()
 
