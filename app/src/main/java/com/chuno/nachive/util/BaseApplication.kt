@@ -1,9 +1,11 @@
 package com.chuno.nachive.util
 
 import android.app.Application
+import android.content.SharedPreferences
 import com.chuno.nachive.R
 import com.kakao.sdk.common.KakaoSdk
 import com.navercorp.nid.NaverIdLoginSDK
+import retrofit2.Retrofit
 
 class BaseApplication : Application() {
     override fun onCreate() {

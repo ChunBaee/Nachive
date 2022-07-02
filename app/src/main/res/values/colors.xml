@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="app_background_color">#B2F0F4</color>
+    <color name="set_profile_background_color">#FFFFFF</color>
+    <color name="set_profile_text_color">#000000</color>
+    <color name="set_profile_save_before_finish">#4D808080</color>
+
 </resources>
