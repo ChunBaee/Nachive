@@ -2,10 +2,20 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.chuno.nachive.login.util.LoginViewModel" />
+
+        <variable
+            name="view"
+            type="com.chuno.nachive.login.LoginActivity" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/app_background_color">
+        android:background="@drawable/img_background_login">
 
 
         <androidx.appcompat.widget.AppCompatButton
@@ -13,7 +23,9 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:background="@drawable/btn_kakao_login"
-            app:layout_constraintWidth_percent="0.80"
+            android:onClick="@{() -> viewModel.getKakaoLoginData(view)}"
+            app:layout_constraintWidth_percent="0.70"
+            app:layout_constraintVertical_bias="0.65"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -24,8 +36,21 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:background="@drawable/btn_naver_login"
+            android:layout_marginTop="15dp"
+            android:onClick="@{() -> viewModel.getNaverLoginData(view)}"
             app:layout_constraintTop_toBottomOf="@id/btn_login_kakao"
-            app:layout_constraintBottom_toTopOf="@id/btn_logout"
+            app:layout_constraintBottom_toTopOf="@id/btn_login_google"
+            app:layout_constraintStart_toStartOf="@id/btn_login_kakao"
+            app:layout_constraintEnd_toEndOf="@id/btn_login_kakao" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login_google"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_google_login"
+            android:layout_marginTop="15dp"
+            android:onClick="@{() -> view.googleLogin()}"
+            app:layout_constraintTop_toBottomOf="@id/btn_login_naver"
             app:layout_constraintStart_toStartOf="@id/btn_login_kakao"
             app:layout_constraintEnd_toEndOf="@id/btn_login_kakao" />
 
@@ -35,7 +60,8 @@
             android:id="@+id/btn_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/btn_login_kakao"
+            android:visibility="invisible"
+            android:onClick="@{() -> view.logout()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
