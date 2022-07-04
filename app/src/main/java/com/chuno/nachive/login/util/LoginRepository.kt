@@ -70,8 +70,8 @@ class LoginRepository {
         auth.signInWithCredential(credential)
             .addOnCompleteListener {
                 if(it.isSuccessful) {
-                    mAuthType.value = 2
                     mAuthToken.value = auth.currentUser?.uid
+                    mAuthType.value = 2
                 } else {
                     mAuthToken.value = "ERROR"
                 }
