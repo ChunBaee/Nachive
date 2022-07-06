@@ -83,9 +83,18 @@ class UserInfoActivity : AppCompatActivity() {
         userMap["NickName"] = binding.userInfoProfileName.text.toString()
         userMap["ProfilePhoto"] = path
 
+        //과거 프로필 이력 DB에 등록하는 로직
+        val pastMap = mutableMapOf<String, Any>()
+        userMap["Name_${getCurTime()}"] = binding.userInfoProfileName.text.toString()
+        userMap["Profile_${getCurTime()}"] = path
+
+        //자동 로그인을 위한 DB
         FirebaseFirestore.getInstance().collection("Acceptable").document(getUserId())
             .set(acceptMap)
-
+        //과거 이력 DB
+        FirebaseFirestore.getInstance().collection("UserInfo").document("Data")
+            .collection(getUserId()).document("Past").set(pastMap)
+        //현재 프로필 DB
         FirebaseFirestore.getInstance().collection("UserInfo").document("Data")
             .collection(getUserId()).document("Current").set(userMap)
             .addOnCompleteListener {
