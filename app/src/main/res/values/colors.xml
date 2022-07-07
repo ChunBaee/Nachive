@@ -8,6 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="main_background_color">#FFFFFF</color>
+    <color name="main_edt_text_color">#282732</color>
+    <color name="main_edt_stroke_color">#FFFFFF</color>
+    <color name="main_top_text_color">#FFFFFF</color>
+
+    <color name="main_drawer_background">#FFFFFF</color>
+    <color name="main_drawer_text_color">#282732</color>
+    <color name="main_drawer_selected">#B2F0F4</color>
+    <color name="main_drawer_unselected">#727272</color>
+
     <color name="app_background_color">#B2F0F4</color>
     <color name="set_profile_background_color">#FFFFFF</color>
     <color name="set_profile_text_color">#000000</color>

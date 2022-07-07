@@ -4,11 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable/form_edit_user_name.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18333333333333332" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/main_drawer_icon_color.xml" value="0.2135" />
+        <entry key="app/src/main/res/drawable/main_drawer_profile.xml" value="0.2135" />
+        <entry key="app/src/main/res/drawable/main_search_edt.xml" value="0.2135" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2508491307659879" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.17074275362318841" />
         <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.165" />
         <entry key="app/src/main/res/layout/activity_write_content.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/main_app_bar.xml" value="0.2889157104492188" />
+        <entry key="app/src/main/res/layout/main_app_bar_layout.xml" value="0.43795620437956206" />
+        <entry key="app/src/main/res/layout/main_header.xml" value="0.25" />
+        <entry key="app/src/main/res/menu/main_side_menu.xml" value="0.25" />
       </map>
     </option>
   </component>

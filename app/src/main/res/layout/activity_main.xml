@@ -4,30 +4,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
-<androidx.constraintlayout.widget.ConstraintLayout
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/main_drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@color/main_background_color"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <TextView
+    <!--main의 app_bar-->
+    <include
+        layout="@layout/main_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!--main의 hamburger_btn-->
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/main_drawer_background"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@color/main_drawer_unselected"
+        app:itemTextColor="@color/main_drawer_unselected"
+        app:labelVisibilityMode="labeled"
+        app:headerLayout="@layout/main_header"
+        app:menu="@menu/main_side_menu"/>
 
-    <Button
-        android:id="@+id/btn_logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="로그아웃"
-        app:layout_constraintVertical_bias="0.6"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
 
 </layout>
