@@ -14,4 +14,6 @@
     <color name="set_profile_save_before_finish">#4D808080</color>
 
     <color name="write_content_divider_color">#DDDDDD</color>
+    <color name="write_card_writer_key_color">#AAAAAA</color>
+    <color name="write_card_writer_value_color">#727272</color>
 </resources>
