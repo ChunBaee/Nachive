@@ -3,12 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/form_background_book_movie_stroke.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/form_edit_user_name.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.17074275362318841" />
         <entry key="app/src/main/res/layout/activity_user_info.xml" value="0.165" />
-        <entry key="app/src/main/res/layout/activity_write_content.xml" value="0.2716049382716049" />
+        <entry key="app/src/main/res/layout/activity_write_content.xml" value="0.34308510638297873" />
+        <entry key="app/src/main/res/layout/item_card_book.xml" value="0.19300911854103345" />
+        <entry key="app/src/main/res/layout/item_card_book_movie.xml" value="0.19250253292806485" />
+        <entry key="app/src/main/res/layout/item_card_movie.xml" value="0.19300911854103345" />
         <entry key="app/src/main/res/layout/item_write_rv_image.xml" value="0.19250253292806485" />
       </map>
     </option>
